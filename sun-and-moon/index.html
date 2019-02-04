@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Sun &amp; Moon</title>
+    <meta name="description" content="Transition images during the day and night.">
+    <meta name="author" content="Zack Moravec">
+    <link rel="stylesheet" href="style/global.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="day">
+            <script>
+            var currentDate = new Date;
+            var hour = currentDate.getHours();
+            
+            if ( (hour >= 5) && (hour < 17) ) {
+                document.write("<img alt=\"Day\" src=\"image/Day.jpg\">");
+            } else {
+                document.write("<img alt=\"Night\" src=\"image/Night.jpg\">");
+            }
+            </script>
+        </div>
+        <div id = "sun">
+            <script>
+            if ( (hour >= 5) && (hour < 17) ) {
+                document.write("<img alt=\"Sun\" src=\"image/Sun.png\">");
+            } else {
+                document.write("<img alt=\"Moon\" src=\"image/Moon.png\">");
+            }
+            </script>
+        </div>
+    </div>
+</body>
+</html>

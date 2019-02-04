@@ -1,0 +1,39 @@
+html {
+    background-color: #7e7e7e;
+}
+img {
+    width: 100%;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template: "item";
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+} 
+#day {
+    width: 80em;
+    position: absolute;
+    bottom: 4vh;
+    right: 5vw;
+}
+#sun {
+    width: 30em;
+    position: absolute;
+    bottom: 25vh;
+    right: 55vw;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
